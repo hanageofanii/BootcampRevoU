@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <style>
+        button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4"><input type="text" name="display" id="display" readonly></th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="clearDisplay()">AC</button>
+            </td>
+            <td>
+                <button onclick="clearLastEntry()">C</button>
+            </td>
+            <td>
+                <button onclick="appendOperator('*')">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendNumber(7)">7</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(8)">8</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(9)">9</button>
+            </td>
+            <td>
+                <button onclick="appendOperator('/')">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendNumber(4)">4</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(5)">5</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(6)">6</button>
+            </td>
+            <td>
+                <button onclick="appendOperator('+')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="appendNumber(1)">1</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(2)">2</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(3)">3</button>
+            </td>
+            <td>
+                <button onclick="appendOperator('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="toggleSign()">+/-</button>
+            </td>
+            <td>
+                <button onclick="appendNumber(0)">0</button>
+            </td>
+            <td>
+                <button onclick="appendDecimal()">.</button>
+            </td>
+            <td>
+                <button onclick="calculate()">=</button>
+            </td>
+        </tr>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
