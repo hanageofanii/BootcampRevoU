@@ -4,26 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator</title>
-    <style>
+    <link rel="stylesheet" href="index.css">
+    <!-- <style>
         button {
             width: 100%;
         }
-    </style>
+    </style> -->
 </head>
 <body>
+    <!-- menggunakan grid -->
+    <!-- <div class="grid-container">
+            <input type="text" name="display">
+            <button class="red" onclick="clearDisplay()">AC</button>
+            <button class="blue" onclick="clearLastEntry()">C</button>
+            <button class="operator" onclick="appendOperator('*')">*</button>
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button class="operator" onclick="appendOperator('/')">/</button>
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            <button class="operator" onclick="appendOperator('+')">+</button>
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button class="operator" onclick="appendOperator('-')">-</button>
+            <button class="modifier" onclick="toggleSign()">+/-</button>
+            <button onclick="appendNumber(0)">0</button>
+            <button class="modifier" onclick="appendDecimal()">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+    </div> -->
+    <br>
     <table>
         <tr>
             <th colspan="4"><input type="text" name="display" id="display" readonly></th>
         </tr>
         <tr>
             <td colspan="2">
-                <button onclick="clearDisplay()">AC</button>
+                <button class="red" onclick="clearDisplay()">AC</button>
             </td>
             <td>
-                <button onclick="clearLastEntry()">C</button>
+                <button class="blue" onclick="clearLastEntry()">C</button>
             </td>
             <td>
-                <button onclick="appendOperator('*')">*</button>
+                <button class="operator" onclick="appendOperator('*')">*</button>
             </td>
         </tr>
         <tr>
@@ -37,7 +62,7 @@
                 <button onclick="appendNumber(9)">9</button>
             </td>
             <td>
-                <button onclick="appendOperator('/')">/</button>
+                <button class="operator" onclick="appendOperator('/')">/</button>
             </td>
         </tr>
         <tr>
@@ -51,7 +76,7 @@
                 <button onclick="appendNumber(6)">6</button>
             </td>
             <td>
-                <button onclick="appendOperator('+')">+</button>
+                <button class="operator" onclick="appendOperator('+')">+</button>
             </td>
         </tr>
         <tr>
@@ -65,21 +90,21 @@
                 <button onclick="appendNumber(3)">3</button>
             </td>
             <td>
-                <button onclick="appendOperator('-')">-</button>
+                <button class="operator" onclick="appendOperator('-')">-</button>
             </td>
         </tr>
         <tr>
             <td>
-                <button onclick="toggleSign()">+/-</button>
+                <button class="modifier" onclick="toggleSign()">+/-</button>
             </td>
             <td>
                 <button onclick="appendNumber(0)">0</button>
             </td>
             <td>
-                <button onclick="appendDecimal()">.</button>
+                <button class="modifier" onclick="appendDecimal()">.</button>
             </td>
             <td>
-                <button onclick="calculate()">=</button>
+                <button class="equal" onclick="calculate()">=</button>
             </td>
         </tr>
     </table>
